@@ -1,4 +1,6 @@
-# **Workshop Schedule**
+# RDI workshop
+
+## **Workshop Schedule**
 
 **Dates:**  
 
