@@ -1,14 +1,17 @@
 ---
-import About from "../components/About.astro"
-import Program from "../components/Program.astro"
+import About from "../components/About.astro";
+import Program from "../components/Program.astro";
 ---
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RDI Workshop</title>
-  <link rel="icon" href="src/assets/fairagro.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="/src/assets/fairagro.ico" type="image/x-icon" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
   <style>
     :root {
       --black: rgb(0, 0, 0);
@@ -36,7 +39,7 @@ import Program from "../components/Program.astro"
       font-size: 2rem;
     }
     header p {
-      margin: .5rem 0 0;
+      margin: 0.5rem 0 0;
       font-size: 1.2rem;
     }
     .container {
@@ -47,14 +50,15 @@ import Program from "../components/Program.astro"
     h2 {
       color: var(--teal);
     }
-    p, ul {
-      margin: .5rem 0 1.5rem;
+    p,
+    ul {
+      margin: 0.5rem 0 1.5rem;
     }
     ul {
       padding-left: 20px;
     }
     ul li {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
     .cta {
       text-align: center;
@@ -67,7 +71,7 @@ import Program from "../components/Program.astro"
       color: var(--black);
       border-radius: 5px;
       font-weight: 700;
-      transition: background .3s ease;
+      transition: background 0.3s ease;
     }
     .cta a:hover {
       background: var(--teal);
@@ -86,13 +90,18 @@ import Program from "../components/Program.astro"
 </head>
 <body>
   <header>
-    <h1><img src="/src/assets/fairagro.ico" alt="FAIRagro Icon" style="width: 32px; height: 32px; vertical-align: middle;"> Middleware - RDI Workshop</h1>
+    <h1>
+      <img
+        src="/src/assets/fairagro.ico"
+        alt="FAIRagro Icon"
+        style="width: 32px; height: 32px; vertical-align: middle;"
+      /> Middleware - RDI Workshop
+    </h1>
     <p>FAIRagro Measuse 4.2 workshop</p>
   </header>
   <div class="container">
     <About />
     <Program />
-    
   </div>
   <footer>
     <p>© 2025 FAIRagrp - Measure 4.2 RDI Workshop. All rights reserved.</p>
