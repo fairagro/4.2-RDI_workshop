@@ -1,34 +1,12 @@
 ---
-import Cordinators from "./Cordinators.astro"
+import Cordinators from "./Cordinators.astro";
 ---
 
-<style>
-  .about-section {
-    background: var(--light-gray);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  .about-section h2 {
-    color: var(--teal);
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-  .about-section p {
-    font-size: 1.2rem;
-    color: var(--black);
-  }
-  .about-section strong {
-    color: var(--lime);
-  }
-</style>
-
-<section class="about-section">
-  <h2>About the Workshop</h2>
-  <p>
+<section class="bg-light-gray p-5 rounded-lg shadow-md mb-5">
+  <h2 class="text-teal text-2xl mb-3">About the Workshop</h2>
+  <p class="text-lg text-black">
     Save the date:
-    <strong>Septembre 8, 2025 12:00 to Septembre 9, 2025 13:00</strong>
-    <Cordinators
+    <strong class="text-lime">Septembre 8, 2025 12:00 to Septembre 9, 2025 13:00</strong>
   </p>
+  <Cordinators />
 </section>

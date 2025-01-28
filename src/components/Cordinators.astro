@@ -1,68 +1,13 @@
 ---
 import userIcon from "../assets/user-icon.png";
+import Person from "./Person.astro";
 ---
 
-<style>
-  .coordinators-section {
-    background: var(--light-gray);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  .coordinators-section h2 {
-    color: var(--teal);
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-  .coordinators-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .coordinator {
-    display: flex;
-    align-items: center;
-    flex: 1 1 calc(33.333% - 20px);
-    box-sizing: border-box;
-  }
-  .coordinator img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  .coordinator p {
-    font-size: 1.2rem;
-    color: var(--black);
-    margin: 0;
-  }
-  @media (max-width: 768px) {
-    .coordinator {
-      flex: 1 1 calc(50% - 20px);
-    }
-  }
-  @media (max-width: 480px) {
-    .coordinator {
-      flex: 1 1 100%;
-    }
-  }
-</style>
-
-<section class="coordinators-section">
-  <h2>Coordinators</h2>
-  <div class="coordinators-list">
-    <div class="coordinator">
-      <img src={userIcon.src} alt="Coordinator 1">
-      <p>Dr. Daniel Arend</p>
-    </div>
-    <div class="coordinator">
-      <img src={userIcon.src} alt="Coordinator 2">
-      <p>Jorge Garcia Brizuela</p>
-    </div>
-    <div class="coordinator">
-      <img src={userIcon.src} alt="Coordinator 3">
-      <p>Carsten Scharfenberg</p>
-    </div>
+<section class="bg-light-gray dark:bg-dark-gray p-5 rounded-lg shadow-md mb-5">
+  <h2 class="text-teal dark:text-lime text-2xl mb-3">Coordinators</h2>
+  <div class="flex flex-wrap gap-5">
+    <Person name="Dr. Daniel Arend" email="daniel.arend@example.com" image={userIcon.src} />
+    <Person name="Jorge Garcia Brizuela" email="jorge.garcia@example.com" image={userIcon.src} />
+    <Person name="Carsten Scharfenberg" email="carsten.scharfenberg@example.com" image={userIcon.src} />
   </div>
 </section>

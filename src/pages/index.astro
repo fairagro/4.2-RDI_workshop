@@ -1,110 +1,44 @@
 ---
 import About from "../components/About.astro";
-import Program from "../components/Program.astro";
-import icon from "../assets/fairagro.ico";
+import iconImage from "../assets/fairagro.ico";
+import Location from "../components/Location.astro";
 ---
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>RDI Workshop</title>
-  <link rel="icon" href={icon} type="image/x-icon" />
+  <link rel="icon" href={iconImage} type="image/x-icon" />
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
   />
-  <style>
-    :root {
-      --black: rgb(0, 0, 0);
-      --white: rgb(255, 255, 255);
-      --teal: rgb(0, 100, 84);
-      --lime: rgb(167, 198, 55);
-      --light-gray: rgb(241, 241, 241);
-    }
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: var(--light-gray);
-      color: var(--black);
-      line-height: 1.6;
-    }
-    header {
-      background: var(--teal);
-      color: var(--white);
-      padding: 1.5rem 0;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2rem;
-    }
-    header p {
-      margin: 0.5rem 0 0;
-      font-size: 1.2rem;
-    }
-    .container {
-      padding: 20px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    h2 {
-      color: var(--teal);
-    }
-    p,
-    ul {
-      margin: 0.5rem 0 1.5rem;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-    }
-    .cta {
-      text-align: center;
-      margin: 30px 0;
-    }
-    .cta a {
-      text-decoration: none;
-      padding: 10px 20px;
-      background: var(--lime);
-      color: var(--black);
-      border-radius: 5px;
-      font-weight: 700;
-      transition: background 0.3s ease;
-    }
-    .cta a:hover {
-      background: var(--teal);
-      color: var(--white);
-    }
-    footer {
-      text-align: center;
-      padding: 10px 0;
-      background: var(--black);
-      color: var(--white);
-      position: fixed;
-      bottom: 0;
-      width: 100%;
-    }
-  </style>
 </head>
-<body>
-  <header>
-    <h1>
+<body class="bg-light-gray dark:bg-black text-black dark:text-white font-sans">
+  <header class="bg-teal dark:bg-teal text-white py-6 text-center shadow-lg">
+    <div class="container mx-auto flex flex-col items-center">
+      <h1 class="text-3xl font-bold flex items-center">
       <img
-        src={icon}
+        src={iconImage}
         alt="FAIRagro Icon"
-        style="width: 32px; height: 32px; vertical-align: middle;"
+        class="inline-block w-10 h-10 mr-3"
       /> Middleware - RDI Workshop
     </h1>
-    <p>FAIRagro Measuse 4.2 workshop</p>
+    <p class="mt-2 text-lg">FAIRagro Measure 4.2 workshop</p>
+    </div>
   </header>
-  <div class="container">
+  <div class="container mx-auto p-5 pb-20">
     <About />
-    <Program />
+    <Location
+      address="Chausseestraße 111, 10115"
+      city="Berlin"
+      country="Germany"
+      mapSrc="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13340.212368957287!2d13.383692653463354!3d52.52727676579079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a851ecc019df9b%3A0xb80319b2b8cca8bd!2sLeibniz-Gemeinschaft!5e0!3m2!1sde!2sde!4v1738068512777!5m2!1sde!2sde"
+    />
   </div>
-  <footer>
+  <footer
+    class="bg-black dark:bg-teal text-white text-center py-4 fixed bottom-0 w-full"
+  >
     <p>© 2025 FAIRagrp - Measure 4.2 RDI Workshop. All rights reserved.</p>
   </footer>
 </body>

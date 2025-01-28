@@ -1,0 +1,22 @@
+---
+const { address, city, country, mapSrc } = Astro.props;
+---
+
+<section class="bg-light-gray dark:bg-dark-gray p-5 rounded-lg shadow-md mb-5">
+  <h2 class="text-teal dark:text-lime text-2xl mb-3">Location</h2>
+  <p class="text-lg text-black dark:text-white mb-1">{address}</p>
+  <p class="text-lg text-black dark:text-white mb-1">{city}</p>
+  <p class="text-lg text-black dark:text-white mb-3">{country}</p>
+  <div class="w-full h-64">
+    <iframe
+      src={mapSrc}
+      width="100%"
+      height="100%"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Google Map Location - Leibniz-Gemeinschaft"
+    ></iframe>
+  </div>
+</section>

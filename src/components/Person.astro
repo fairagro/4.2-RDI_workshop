@@ -1,0 +1,16 @@
+---
+const { name, email, image } = Astro.props;
+---
+
+<div class="flex items-center flex-1 mb-5">
+  <img src={image} alt={name} class="w-10 h-10 rounded-full mr-3" />
+  <p class="text-lg text-black dark:text-white m-0">{name}</p>
+  {email && (
+    <button
+      onclick={`window.location.href='mailto:${email}'`}
+      class="bg-teal dark:bg-gray-800 text-white border-none py-2 px-4 rounded ml-3 font-bold shadow-md transition duration-300 hover:bg-lime dark:hover:bg-gray-600 hover:-translate-y-1 active:bg-teal dark:active:bg-gray-700 active:translate-y-0"
+    >
+      Contact
+    </button>
+  )}
+</div>
