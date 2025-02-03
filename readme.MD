@@ -15,26 +15,25 @@
 
 - Brief overview of the workshop agenda and objectives.
 
-### **12:15–13:30**: Session 1: *[Topic Name]* (Jorge or Daniel)
+### **12:15–14:00**: Session 1: *[Topic Name]* (Jorge or Daniel)
 
-- Metadata standarts (Gabriel)
+- RDIs shorts presentations (5 min)
+- Metadata standarts (?)
 - Data access and use (Stephan or Constantin)
 - AAI (Carmen)
 - Discusion
 
-### **13:30–13:45**: Coffee Break ☕  
+### **14:00–14:30**: Coffee Break ☕  
 
 - Refreshments and networking.
 
-### **13:45–15:00**: Session 2: FAIRagro middleware
+### **14:30–16:30**: Session 2: FAIRagro middleware
 
 - FAIRagro middleware presentation
 - FAIRagro middleware demo
 - Debate
 
-### **15:00–15:15**: Short Break  
-
-### **15:15–16:45**: Session 3: *[Topic Name]*  
+### **16:30–16:45**: Session 3: *[Topic Name]*  
 
 - FAIRagro search and inventory portal
 
@@ -46,7 +45,7 @@
 
 ## **Day 2: 09.09.2024 (9:00–13:00)**
 
-### **09:00–09:15**: Morning Check-in  
+### **09:00–09:15**:
 
 - Recap of Day 1 and goals for Day 2.
 
